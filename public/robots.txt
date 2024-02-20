@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://sergey-varlamov.vercel.app
+
+# Sitemaps
+Sitemap: https://sergey-varlamov.vercel.app/sitemap.xml
