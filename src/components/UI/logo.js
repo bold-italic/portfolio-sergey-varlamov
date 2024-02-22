@@ -5,7 +5,7 @@ import Image from "next/image";
 const Logo = () => {
   return (
     <ScrollLink to="home" smooth duration={500} offset={-100}>
-      <chakra.div cursor="pointer" mt="2">
+      <chakra.div cursor="pointer">
         <Image
           src="/favicon/logo.png"
           width={60}
