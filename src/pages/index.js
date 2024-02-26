@@ -4,6 +4,8 @@ import {
   Text,
   useColorModeValue,
   Divider,
+  Button,
+  Link as ChakraLink,
 } from "@chakra-ui/react";
 import { NextSeo } from "next-seo";
 import Image from "next/image";
@@ -72,7 +74,6 @@ const Home = () => {
         display="flex"
         flexDirection="column"
         justifyContent="center"
-        flexDir="column"
         textAlign="center"
         alignItems="center"
         py="8"
@@ -157,9 +158,49 @@ const Home = () => {
               </Box>
             </Box>
 
-            <Box width={{ lg: "50%" }} px="10">
+            <Box width={{ lg: "60%" }} px="10">
               <Heading as="h1">{project.title}</Heading>
               <Text py="4">{project.description}</Text>
+              <Box
+                display="flex"
+                justifyContent="center"
+                pb="8"
+              >
+                {project.technologies &&
+                  project.technologies.map((technology, index) => (
+                    <Box key={index} mr="2">
+                      <img src={technology.link} alt={technology.title} />
+                    </Box>
+                  ))}
+              </Box>
+              <Box
+                display="flex"
+                flexDirection="row"
+                justifyContent="space-around"
+              >
+                <ChakraLink href={project.liveDemoLink} isExternal>
+                  <Button
+                    size="sm"
+                    height="40px"
+                    width="110px"
+                    border="1px"
+                    color={color}
+                  >
+                    Live Demo
+                  </Button>
+                </ChakraLink>
+                <ChakraLink href={project.gitHubLink} isExternal>
+                  <Button
+                    size="sm"
+                    height="40px"
+                    width="110px"
+                    border="1px"
+                    color={color}
+                  >
+                    GitHub
+                  </Button>
+                </ChakraLink>
+              </Box>
             </Box>
           </Box>
         ))}
