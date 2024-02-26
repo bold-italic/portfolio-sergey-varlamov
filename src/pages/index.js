@@ -127,13 +127,13 @@ const Home = () => {
           <Box
             key={index}
             display={{ lg: "flex" }}
-            justifyContent={{ lg: "center" }}
+            justifyContent={{ lg: "space-around" }}
             alignItems={{ lg: "center" }}
             flexDirection={{ lg: isOdd(index) === 1 ? "row-reverse" : "row" }}
           >
             <Box
               style={projectImageStyle}
-              width={{ base: "80%", lg: "35%" }}
+              maxW={{ base: "90%", lg: "unset" }}
               mx={{ base: "auto", lg: "0" }}
               pl={{ lg: isOdd(index) === 1 && "10" }}
               pr={{ lg: isOdd(index) === 0 && "10" }}
