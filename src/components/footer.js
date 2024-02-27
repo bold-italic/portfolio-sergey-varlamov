@@ -14,6 +14,7 @@ const Footer = () => {
         textAlign="center"
         minH="4rem"
         px={[4, 6, 10, 14, 20]}
+        pt={8}
         maxW={MAX_WIDTH}
         mx="auto"
       >

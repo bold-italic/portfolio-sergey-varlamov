@@ -111,7 +111,7 @@ const Home = () => {
         <Text as="span">About Me</Text>{" "}
       </Heading>
       <Divider />
-      <Box my={6}>{about.description}</Box>
+      <Box textAlign={{ base: "center", lg: "left" }} my={6}>{about.description}</Box>
 
       {/* Section Projects */}
       <Heading id="about" fontSize={["3xl", "4xl"]} fontWeight="700" mb={1}>
@@ -163,13 +163,19 @@ const Home = () => {
               <Text py="4">{project.description}</Text>
               <Box
                 display="flex"
+                flexDirection={{ base: "column", lg: "row" }}
                 justifyContent="center"
+                alignItems="center"
                 pb="8"
               >
                 {project.technologies &&
                   project.technologies.map((technology, index) => (
-                    <Box key={index} mr="2">
-                      <img src={technology.link} alt={technology.title} />
+                    <Box key={index} m={{ base: "3px", lg: "7px" }}>
+                      <img
+                        src={technology.link}
+                        alt={technology.title}
+                        style={{ width: "auto", height: "25px" }}
+                      />
                     </Box>
                   ))}
               </Box>
@@ -177,6 +183,7 @@ const Home = () => {
                 display="flex"
                 flexDirection="row"
                 justifyContent="space-around"
+                pb={4}
               >
                 <ChakraLink href={project.liveDemoLink} isExternal>
                   <Button
