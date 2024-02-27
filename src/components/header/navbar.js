@@ -78,7 +78,13 @@ const Navbar = () => {
           px={{ lg: "4" }}
           py={{ base: "3", lg: "0" }}
         >
-          <ScrollLink to="projects" smooth duration={500} onClick={closeMenu}>
+          <ScrollLink
+            to="projects"
+            smooth
+            duration={500}
+            offset={-140}
+            onClick={closeMenu}
+          >
             <chakra.div cursor="pointer">Projects</chakra.div>
           </ScrollLink>
         </chakra.li>
