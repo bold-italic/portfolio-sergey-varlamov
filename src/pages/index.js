@@ -5,13 +5,14 @@ import {
   useColorModeValue,
   Divider,
   Button,
+  Icon,
   Link as ChakraLink,
 } from "@chakra-ui/react";
 import { NextSeo } from "next-seo";
 import Image from "next/image";
 import SocialAccounts from "@/components/socialAccounts";
 
-import { seo, about, projects } from "config";
+import { seo, about, projects, skills } from "config";
 
 const Home = () => {
   const color = useColorModeValue("telegram.500", "telegram.400");
@@ -111,7 +112,9 @@ const Home = () => {
         <Text as="span">About Me</Text>{" "}
       </Heading>
       <Divider />
-      <Box textAlign={{ base: "center", lg: "left" }} my={6}>{about.description}</Box>
+      <Box textAlign={{ base: "center", lg: "left" }} my={6}>
+        {about.description}
+      </Box>
 
       {/* Section Projects */}
       <Heading id="about" fontSize={["3xl", "4xl"]} fontWeight="700" mb={1}>
@@ -159,26 +162,36 @@ const Home = () => {
             </Box>
 
             <Box width={{ lg: "60%" }} px="10">
-              <Heading as="h1">{project.title}</Heading>
+              <Heading fontSize={["2xl"]} fontWeight="700">
+                {project.title}
+              </Heading>
               <Text py="4">{project.description}</Text>
+
               <Box
                 display="flex"
-                flexDirection={{ base: "column", lg: "row" }}
+                flexWrap="wrap"
                 justifyContent="center"
                 alignItems="center"
                 pb="8"
               >
                 {project.technologies &&
                   project.technologies.map((technology, index) => (
-                    <Box key={index} m={{ base: "3px", lg: "7px" }}>
-                      <img
-                        src={technology.link}
-                        alt={technology.title}
-                        style={{ width: "auto", height: "25px" }}
-                      />
+                    <Box key={index} m={{ base: "3px", lg: "5px" }}>
+                      <Button
+                        size="xs"
+                        // height="30px"
+                        // width="140px"
+                        border="1px"
+                        variant="outline"
+                        // color="teal"
+                        leftIcon={<Icon as={technology.icon} />}
+                      >
+                        {technology.title}
+                      </Button>
                     </Box>
                   ))}
               </Box>
+
               <Box
                 display="flex"
                 flexDirection="row"
@@ -190,7 +203,7 @@ const Home = () => {
                     size="sm"
                     height="40px"
                     width="110px"
-                    border="1px"
+                    border="2px"
                     color={color}
                   >
                     Live Demo
@@ -201,7 +214,7 @@ const Home = () => {
                     size="sm"
                     height="40px"
                     width="110px"
-                    border="1px"
+                    border="2px"
                     color={color}
                   >
                     GitHub
@@ -211,6 +224,24 @@ const Home = () => {
             </Box>
           </Box>
         ))}
+      </Box>
+
+      {/* Section Skills */}
+      <Heading id="skills" fontSize={["3xl", "4xl"]} fontWeight="700" mb={1}>
+        <Text as="span">Skills</Text>{" "}
+      </Heading>
+      <Divider />
+      <Box display="flex" flexWrap="wrap" justifyContent="center" my={6}>
+        {skills &&
+          skills.map((skill, index) => (
+            <Box key={index} m={{ base: "3px", lg: "7px" }}>
+              <img
+                src={skill.link}
+                alt={skill.title}
+                style={{ width: "auto", height: "25px" }}
+              />
+            </Box>
+          ))}
       </Box>
     </>
   );

@@ -1,3 +1,7 @@
+import { FaHtml5, FaCss3Alt } from "react-icons/fa";
+import { TbBrandNextjs } from "react-icons/tb";
+import { SiMui, SiMongodb, SiChakraui } from "react-icons/si";
+
 export const seo = {
   title: "Portfolio Sergey Varlamov",
   description: "My portfolio as a full-stack developer, created with Next.js.",
@@ -19,15 +23,15 @@ export const projects = [
     technologies: [
       {
         title: "Next.js",
-        link: "https://img.shields.io/badge/-Next.js-20232A.svg?style=flat&logo=nextdotjs&logoColor=white",
+        icon: TbBrandNextjs,
       },
       {
         title: "MongoDB",
-        link: "https://img.shields.io/badge/-MongoDB-4EA94B?style=flat&logo=MongoDB&logoColor=white",
+        icon: SiMongodb,
       },
       {
         title: "Material UI",
-        link: "https://img.shields.io/badge/-Material--UI-0081CB.svg?style=flat&logo=mui&logoColor=white",
+        icon: SiMui,
       },
     ],
     liveDemoLink: "https://volkl-catalogue.vercel.app",
@@ -40,15 +44,15 @@ export const projects = [
     technologies: [
       {
         title: "Next.js",
-        link: "https://img.shields.io/badge/-Next.js-20232A.svg?style=flat&logo=nextdotjs&logoColor=white",
+        icon: TbBrandNextjs,
       },
       {
         title: "MongoDB",
-        link: "https://img.shields.io/badge/-MongoDB-4EA94B?style=flat&logo=MongoDB&logoColor=white",
+        icon: SiMongodb,
       },
       {
         title: "Chakra UI",
-        link: "https://img.shields.io/badge/-Chakra--UI-4ED1C5.svg?style=flat&logo=chakraui&logoColor=white",
+        icon: SiChakraui,
       },
     ],
     liveDemoLink: "https://sergey-varlamov.vercel.app",
@@ -153,6 +157,99 @@ export const projects = [
     ],
     liveDemoLink: "https://open-data-api.vercel.app",
     gitHubLink: "https://github.com/bold-italic/open-data-API",
+  },
+  {
+    title: "Communication Strategies Project Website",
+    description:
+      "A simple static website that contains 11 communication strategies with examples.",
+    image: "/project-7.png",
+    technologies: [
+      {
+        title: "HTML5",
+        link: "https://img.shields.io/badge/-HTML5-E34F26.svg?style=flat&logo=html5&logoColor=white",
+      },
+      {
+        title: "CSS3",
+        link: "https://img.shields.io/badge/-CSS3-1572B6.svg?style=flat&logo=css3&logoColor=white",
+      },
+    ],
+    liveDemoLink: "https://static-website-new.vercel.app",
+    gitHubLink: "https://github.com/bold-italic/static-website",
+  },
+];
+
+export const skills = [
+  {
+    title: "HTML5",
+    link: "https://img.shields.io/badge/-HTML5-E34F26.svg?style=flat&logo=html5&logoColor=white",
+  },
+  {
+    title: "CSS3",
+    link: "https://img.shields.io/badge/-CSS3-1572B6.svg?style=flat&logo=css3&logoColor=white",
+  },
+  {
+    title: "PHP",
+    link: "https://img.shields.io/badge/-PHP-777BB4.svg?style=flat&logo=php&logoColor=white",
+  },
+  {
+    title: "JavaScript",
+    link: "https://img.shields.io/badge/-JavaScript-323330.svg?style=flat&logo=javascript&logoColor=F7DF1E",
+  },
+  {
+    title: "React",
+    link: "https://img.shields.io/badge/-React-20232A.svg?style=flat&logo=react&logoColor=61DAFB",
+  },
+  {
+    title: "Next.js",
+    link: "https://img.shields.io/badge/-Next.js-20232A.svg?style=flat&logo=nextdotjs&logoColor=white",
+  },
+  {
+    title: "Material UI",
+    link: "https://img.shields.io/badge/-Material--UI-0081CB.svg?style=flat&logo=mui&logoColor=white",
+  },
+  {
+    title: "Chakra UI",
+    link: "https://img.shields.io/badge/-Chakra--UI-4ED1C5.svg?style=flat&logo=chakraui&logoColor=white",
+  },
+  {
+    title: "Bootstrap",
+    link: "https://img.shields.io/badge/-Bootstrap-563D7C.svg?style=flat&logo=bootstrap&logoColor=white",
+  },
+  {
+    title: "MySQL",
+    link: "https://img.shields.io/badge/-MySQL-00000F?style=flat&logo=mysql&logoColor=white",
+  },
+  {
+    title: "MongoDB",
+    link: "https://img.shields.io/badge/-MongoDB-4EA94B?style=flat&logo=MongoDB&logoColor=white",
+  },
+  {
+    title: "Java",
+    link: "https://img.shields.io/badge/-Java-DC143C.svg?style=flat&logo=openjdk&logoColor=white",
+  },
+  {
+    title: "Python",
+    link: "https://img.shields.io/badge/-Python-3670A0?style=flat&logo=python&logoColor=FFDD54",
+  },
+  {
+    title: "Flask",
+    link: "https://img.shields.io/badge/-Flask-00000F.svg?style=flat&logo=flask&logoColor=white",
+  },
+  {
+    title: "Git",
+    link: "https://img.shields.io/badge/-Git-F05033.svg?style=flat&logo=git&logoColor=white",
+  },
+  {
+    title: "GitHub",
+    link: "https://img.shields.io/badge/-GitHub-00000F.svg?style=flat&logo=github&logoColor=white",
+  },
+  {
+    title: "AWS",
+    link: "https://img.shields.io/badge/-Amazon_AWS-FF9900?style=flat&logo=amazonaws&logoColor=white",
+  },
+  {
+    title: "Docker",
+    link: "https://img.shields.io/badge/-Docker-0DB7ED.svg?style=flat&logo=docker&logoColor=white",
   },
 ];
 

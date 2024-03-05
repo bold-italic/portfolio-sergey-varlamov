@@ -73,6 +73,7 @@ const Navbar = () => {
             <chakra.div cursor="pointer">About</chakra.div>
           </ScrollLink>
         </chakra.li>
+
         <chakra.li
           listStyleType="none"
           px={{ lg: "4" }}
@@ -88,8 +89,22 @@ const Navbar = () => {
             <chakra.div cursor="pointer">Projects</chakra.div>
           </ScrollLink>
         </chakra.li>
-      </chakra.ul>
 
+        <chakra.li
+          listStyleType="none"
+          px={{ lg: "4" }}
+          py={{ base: "3", lg: "0" }}
+        >
+          <ScrollLink
+            to="skills"
+            smooth
+            duration={500}
+            onClick={closeMenu}
+          >
+            <chakra.div cursor="pointer">Skills</chakra.div>
+          </ScrollLink>
+        </chakra.li>
+      </chakra.ul>
       <ColorModeToggle />
     </Box>
   );
