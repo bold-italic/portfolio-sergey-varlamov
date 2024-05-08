@@ -69,7 +69,7 @@ const Home = () => {
         }}
       />
 
-      {/* Section Home  */}
+      {/* Section Home */}
       <Box
         as="section"
         display="flex"
