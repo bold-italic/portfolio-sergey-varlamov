@@ -40,7 +40,7 @@ export const projects = [
   {
     title: "Sergey Portfolio",
     description: "Text 2",
-    image: "/project-1.png",
+    image: "/project-2.png",
     technologies: [
       {
         title: "Next.js",
