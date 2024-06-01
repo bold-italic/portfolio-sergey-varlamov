@@ -16,9 +16,9 @@ export const about = {
 
 export const projects = [
   {
-    title: "VÖLKL Skis catalogue",
+    title: "VÖLKL Ski Catalogue",
     description:
-      "The Full Stack Next.js application for the redesigned Völkl skis catalogue seamlessly integrates Next.js for robust frontend development, MongoDB as the database backend, Material UI for a modern and responsive user interface, and leverages Cloudinary for efficient image management and delivery.",
+      "The Full Stack Next.js application for the redesigned Völkl ski catalogue seamlessly integrates Next.js for robust frontend development, MongoDB as the database backend, Material UI for a modern and responsive user interface, and leverages Cloudinary for efficient image management and delivery.",
     image: "/project-1.png",
     technologies: [
       {
