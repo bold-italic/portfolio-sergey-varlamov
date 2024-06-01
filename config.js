@@ -11,7 +11,7 @@ export const seo = {
 export const about = {
   introduction: "I'm a dedicated Full Stack Web Developer, always learning and evolving.",
   description:
-    "Hello! My name is Sergey. I successfully graduated Red River College Polytechnic in Manitoba...",
+    "Hello! My name is Sergey. I have recently graduated with Honors from the Full Stack Web Development program at Red River College Polytechnic. With over 10 years of experience in the Telecom and IT sectors, I have specialized in Software QA and Computer Systems.",
 };
 
 export const projects = [
@@ -36,27 +36,6 @@ export const projects = [
     ],
     liveDemoLink: "https://volkl-catalogue.vercel.app",
     gitHubLink: "https://github.com/bold-italic/volkl-catalogue",
-  },
-  {
-    title: "Sergey Portfolio",
-    description: "Text 2",
-    image: "/project-2.png",
-    technologies: [
-      {
-        title: "Next.js",
-        icon: TbBrandNextjs,
-      },
-      {
-        title: "MongoDB",
-        icon: SiMongodb,
-      },
-      {
-        title: "Chakra UI",
-        icon: SiChakraui,
-      },
-    ],
-    liveDemoLink: "https://sergey-varlamov.vercel.app",
-    gitHubLink: "https://github.com/bold-italic/portfolio-sergey-varlamov",
   },
   {
     title: "World of Mirrors CMS",
