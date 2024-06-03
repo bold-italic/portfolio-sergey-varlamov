@@ -1,6 +1,5 @@
-import { FaHtml5, FaCss3Alt } from "react-icons/fa";
 import { TbBrandNextjs } from "react-icons/tb";
-import { SiMui, SiMongodb, SiChakraui } from "react-icons/si";
+import { SiMui, SiMongodb } from "react-icons/si";
 
 export const seo = {
   title: "Portfolio Sergey Varlamov",
@@ -9,7 +8,8 @@ export const seo = {
 };
 
 export const about = {
-  introduction: "I'm a dedicated Full Stack Web Developer, always learning and evolving.",
+  introduction:
+    "I'm a dedicated Full Stack Web Developer, always learning and evolving.",
   description:
     "Hello! My name is Sergey. I have recently graduated with Honors from the Full Stack Web Development program at Red River College Polytechnic. With over 10 years of experience in the Telecom and IT sectors, I have specialized in Software QA and Computer Systems.",
 };

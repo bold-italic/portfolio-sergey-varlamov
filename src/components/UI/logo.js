@@ -1,4 +1,4 @@
-import { chakra, Box } from "@chakra-ui/react";
+import { chakra } from "@chakra-ui/react";
 import { Link as ScrollLink } from "react-scroll";
 import Image from "next/image";
 
