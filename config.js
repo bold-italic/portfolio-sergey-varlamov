@@ -11,7 +11,7 @@ export const about = {
   introduction:
     "I'm a dedicated Full Stack Web Developer, always learning and evolving.",
   description:
-    "Hello! My name is Sergey. I have recently graduated with Honors from the Full Stack Web Development program at Red River College Polytechnic. With over 10 years of experience in the Telecom and IT sectors, I have specialized in Software QA and Computer Systems.",
+    "Hello! My name is Sergey. I have recently graduated with Honours from the Full Stack Web Development program at Red River College Polytechnic. With over 10 years of experience in the Telecom and IT sectors, I have specialized in Software QA and Computer Systems.",
 };
 
 export const projects = [
